@@ -44,7 +44,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					hum.Parent.HumanoidRootPart.Anchored = false
 					wait(1.5)
 					hum.Parent.PrimaryPart.Anchored = true
-					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(5),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head1.HeadV2.HeadUnion.CFrame}):Play()
+					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head1.HeadV2.HeadUnion.CFrame}):Play()
 
 					wait(5)
 					hum.Health = 0
@@ -53,7 +53,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					local Caughter = Instance.new("BoolValue",hum2)
 					Caughter.Name = "Caught"
 					hum2.Anchored = false
-					game:GetService("TweenService"):Create(hum2,TweenInfo.new(10),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head1.HeadV2.HeadUnion.CFrame}):Play()
+					game:GetService("TweenService"):Create(hum2,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head1.HeadV2.HeadUnion.CFrame}):Play()
 				end
 			end)
 		elseif v.Name == "Beam2" then
@@ -65,7 +65,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					hum.Parent.HumanoidRootPart.Anchored = false
 					wait(1.5)
 					hum.Parent.PrimaryPart.Anchored = true
-					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(5),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head2.HeadV2.HeadUnion.CFrame}):Play()
+					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head2.HeadV2.HeadUnion.CFrame}):Play()
 
 					wait(5)
 					hum.Health = 0
@@ -74,7 +74,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					local Caughter = Instance.new("BoolValue",hum2)
 					Caughter.Name = "Caught"
 					hum2.Anchored = false
-					game:GetService("TweenService"):Create(hum2,TweenInfo.new(10),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head2.HeadV2.HeadUnion.CFrame}):Play()
+					game:GetService("TweenService"):Create(hum2,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head2.HeadV2.HeadUnion.CFrame}):Play()
 				end
 			end)
 		elseif v.Name == "Beam3" then
@@ -86,7 +86,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					hum.Parent.HumanoidRootPart.Anchored = false
 					wait(1.5)
 					hum.Parent.PrimaryPart.Anchored = true
-					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(5),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head3.HeadV2.HeadUnion.CFrame}):Play()
+					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head3.HeadV2.HeadUnion.CFrame}):Play()
 
 					wait(5)
 					hum.Health = 0
@@ -95,7 +95,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					local Caughter = Instance.new("BoolValue",hum2)
 					Caughter.Name = "Caught"
 					hum2.Anchored = false
-					game:GetService("TweenService"):Create(hum2,TweenInfo.new(10),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head3.HeadV2.HeadUnion.CFrame}):Play()
+					game:GetService("TweenService"):Create(hum2,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head3.HeadV2.HeadUnion.CFrame}):Play()
 				end
 			end)
 		elseif v.Name == "Beam4" then
@@ -107,7 +107,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					hum.Parent.HumanoidRootPart.Anchored = false
 					wait(1.5)
 					hum.Parent.PrimaryPart.Anchored = true
-					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(5),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head4.HeadV2.HeadUnion.CFrame}):Play()
+					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head4.HeadV2.HeadUnion.CFrame}):Play()
 
 					wait(5)
 					hum.Health = 0
@@ -116,7 +116,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					local Caughter = Instance.new("BoolValue",hum2)
 					Caughter.Name = "Caught"
 					hum2.Anchored = false
-					game:GetService("TweenService"):Create(hum2,TweenInfo.new(10),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head4.HeadV2.HeadUnion.CFrame}):Play()
+					game:GetService("TweenService"):Create(hum2,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head4.HeadV2.HeadUnion.CFrame}):Play()
 				end
 			end)
 		elseif v.Name == "Beam5" then
@@ -128,7 +128,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					hum.Parent.HumanoidRootPart.Anchored = false
 					wait(1.5)
 					hum.Parent.PrimaryPart.Anchored = true
-					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(5),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head5.HeadV2.HeadUnion.CFrame}):Play()
+					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head5.HeadV2.HeadUnion.CFrame}):Play()
 
 					wait(5)
 					hum.Health = 0
@@ -137,7 +137,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					local Caughter = Instance.new("BoolValue",hum2)
 					Caughter.Name = "Caught"
 					hum2.Anchored = false
-					game:GetService("TweenService"):Create(hum2,TweenInfo.new(10),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head5.HeadV2.HeadUnion.CFrame}):Play()
+					game:GetService("TweenService"):Create(hum2,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head5.HeadV2.HeadUnion.CFrame}):Play()
 				end
 			end)
 		end
@@ -149,7 +149,7 @@ spawn(function()
 
 	while true do
 		local timse = 15
-		game:GetService("TweenService"):Create(Coruse,TweenInfo.new(45,Enum.EasingStyle.Linear,Enum.EasingDirection.Out),{CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame}):Play()
+		game:GetService("TweenService"):Create(Coruse,TweenInfo.new(55,Enum.EasingStyle.Linear,Enum.EasingDirection.Out),{CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame}):Play()
 		wait(15)
 	end
 end)
