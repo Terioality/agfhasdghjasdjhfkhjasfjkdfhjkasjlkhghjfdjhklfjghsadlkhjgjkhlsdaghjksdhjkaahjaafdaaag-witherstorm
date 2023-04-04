@@ -46,7 +46,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					hum.Parent.PrimaryPart.Anchored = true
 					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head1.HeadV2.HeadUnion.CFrame}):Play()
 
-					wait(5)
+					wait(15)
 					hum.Health = 0
 				elseif hum == nil then
 					local hum2 = hit
@@ -67,7 +67,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					hum.Parent.PrimaryPart.Anchored = true
 					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head2.HeadV2.HeadUnion.CFrame}):Play()
 
-					wait(5)
+					wait(15)
 					hum.Health = 0
 				elseif hum == nil then
 					local hum2 = hit
@@ -88,7 +88,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					hum.Parent.PrimaryPart.Anchored = true
 					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head3.HeadV2.HeadUnion.CFrame}):Play()
 
-					wait(5)
+					wait(15)
 					hum.Health = 0
 				elseif hum == nil then
 					local hum2 = hit
@@ -109,7 +109,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					hum.Parent.PrimaryPart.Anchored = true
 					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head4.HeadV2.HeadUnion.CFrame}):Play()
 
-					wait(5)
+					wait(15)
 					hum.Health = 0
 				elseif hum == nil then
 					local hum2 = hit
@@ -130,7 +130,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					hum.Parent.PrimaryPart.Anchored = true
 					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head5.HeadV2.HeadUnion.CFrame}):Play()
 
-					wait(5)
+					wait(15)
 					hum.Health = 0
 				elseif hum == nil then
 					local hum2 = hit
