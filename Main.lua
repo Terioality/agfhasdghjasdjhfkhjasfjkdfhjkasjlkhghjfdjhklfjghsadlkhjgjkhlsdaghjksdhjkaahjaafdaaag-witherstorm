@@ -46,8 +46,13 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					hum.Parent.PrimaryPart.Anchored = true
 					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head1.HeadV2.HeadUnion.CFrame}):Play()
 
-					wait(15)
+					wait(1)
+				        if game.Players.LocalPlayer.Character.Humanoid.MoveDirection == Vector3.new(0,0,0) then
+					wait(14)
 					hum.Health = 0
+					wait(5)
+					hum.Parent:Destroy()
+					end
 				elseif hum == nil then
 					local hum2 = hit
 					local Caughter = Instance.new("BoolValue",hum2)
@@ -69,6 +74,8 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 
 					wait(15)
 					hum.Health = 0
+											wait(5)
+					hum.Parent:Destroy()
 				elseif hum == nil then
 					local hum2 = hit
 					local Caughter = Instance.new("BoolValue",hum2)
@@ -90,6 +97,8 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 
 					wait(15)
 					hum.Health = 0
+											wait(5)
+					hum.Parent:Destroy()
 				elseif hum == nil then
 					local hum2 = hit
 					local Caughter = Instance.new("BoolValue",hum2)
@@ -111,6 +120,8 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 
 					wait(15)
 					hum.Health = 0
+											wait(5)
+					hum.Parent:Destroy()
 				elseif hum == nil then
 					local hum2 = hit
 					local Caughter = Instance.new("BoolValue",hum2)
@@ -132,6 +143,8 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 
 					wait(15)
 					hum.Health = 0
+											wait(5)
+					hum.Parent:Destroy()
 				elseif hum == nil then
 					local hum2 = hit
 					local Caughter = Instance.new("BoolValue",hum2)
