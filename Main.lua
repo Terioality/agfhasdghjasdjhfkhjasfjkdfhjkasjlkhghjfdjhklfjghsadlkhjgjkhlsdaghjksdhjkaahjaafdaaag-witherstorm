@@ -149,8 +149,13 @@ spawn(function()
 
 	while true do
 		local timse = 15
-		game:GetService("TweenService"):Create(Coruse,TweenInfo.new(55,Enum.EasingStyle.Linear,Enum.EasingDirection.Out),{CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame}):Play()
+			if game.Workspace:FindFirstChild("CurrentRooms") then
+		game:GetService("TweenService"):Create(Coruse,TweenInfo.new(40,Enum.EasingStyle.Linear,Enum.EasingDirection.Out),{CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame}):Play()
 		wait(15)
+	       else
+	      game:GetService("TweenService"):Create(Coruse,TweenInfo.new(25,Enum.EasingStyle.Linear,Enum.EasingDirection.Out),{CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame}):Play()
+		wait(15)
+	   end
 	end
 end)
 if game.Workspace:FindFirstChild("CurrentRooms") then
