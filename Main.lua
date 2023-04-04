@@ -262,6 +262,58 @@ while true do
 		tweenPart(randomPart)
 	end
 end
+	elseif game.Workspace:FindFirstChild("Props") then
+	    local CanWitherMove = false
+-- Get the command block part
+local commandBlock = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").CommandBlock
+-- Define the duration of the tween in seconds
+local tweenDuration = 2
+
+-- Define the easing style of the tween
+local easingStyle = Enum.EasingStyle.Quad
+
+-- Define the direction of the tween
+local easingDirection = Enum.EasingDirection.InOut
+
+-- Get the TweenService
+local tweenService = game:GetService("TweenService")
+
+-- Create a function that tweens a part towards the command block
+local function tweenPart(part)
+	local partPosition = part.Position
+	local commandBlockPosition = commandBlock.Position
+	local tweenInfo = TweenInfo.new(tweenDuration, easingStyle, easingDirection)
+	local tween = tweenService:Create(part, tweenInfo, {Position = commandBlockPosition;Color = Color3.fromRGB(0, 0, 0);CFrame = commandBlock.CFrame})
+	tween:Play()
+	game:GetService("Debris"):AddItem(part,tweenDuration+5)
+end
+
+-- Loop forever, tweening a random part every 0.5 seconds
+distance = 5 --the distance it ends up waving
+speed = 2 --how fast it is
+
+rs = game:GetService'RunService'.RenderStepped
+cam = workspace.CurrentCamera
+while true do
+	wait(0.05)
+		rs:wait()
+	cam.CoordinateFrame = cam.CoordinateFrame
+		* CFrame.Angles(0,0,
+			math.rad( distance * math.sin( tick() * speed ) )
+		)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+	local parts = game.Workspace.Props:GetDescendants()
+	local randomPart = parts[math.random(#parts)]
+	if randomPart:IsA("BasePart") and randomPart ~= commandBlock or randomPart:IsA("BasePart") and randomPart.Name ~= "HumanoidRootPart" or randomPart:IsA("BasePart") and randomPart.Name ~= "Floor" or randomPart:IsA("BasePart") and randomPart.Name ~= "UpperTorso" or randomPart:IsA("BasePart") and randomPart.Name ~= "LowerTorso" or randomPart:IsA("BasePart") and randomPart.Name ~= "Head" then
+		tweenPart(randomPart)
+		tweenPart(randomPart)
+		tweenPart(randomPart)
+		tweenPart(randomPart)
+		tweenPart(randomPart)
+		tweenPart(randomPart)
+		tweenPart(randomPart)
+	end
+end
 end
 
 
