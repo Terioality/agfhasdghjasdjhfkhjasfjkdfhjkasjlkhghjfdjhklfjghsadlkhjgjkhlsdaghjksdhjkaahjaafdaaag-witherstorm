@@ -47,18 +47,10 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head1.HeadV2.HeadUnion.CFrame}):Play()
 
 					wait(1)
-				        if game.Players.LocalPlayer.Character.Humanoid.MoveDirection == Vector3.new(0,0,0) then
 					wait(14)
 					hum.Health = 0
 					wait(5)
 					hum.Parent:Destroy()
-					else
-					wait(4)
-					hum.Parent.HumanoidRootPart.Anchored = false
-					wait(10)
-					hum.Parent.PrimaryPart.Anchored = false
-					
-					end
 				elseif hum == nil then
 					local hum2 = hit
 					local Caughter = Instance.new("BoolValue",hum2)
