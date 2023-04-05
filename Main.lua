@@ -42,6 +42,8 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					local Caughter = Instance.new("BoolValue",hum.Parent)
 					Caughter.Name = "Caught"
 					hum.Parent.HumanoidRootPart.Anchored = false
+					local chanceagain = math.random(1,5)
+					if chanceagain == 1 then
 					wait(1.5)
 					hum.Parent.PrimaryPart.Anchored = true
 					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head1.HeadV2.HeadUnion.CFrame}):Play()
@@ -51,6 +53,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					hum.Health = 0
 					wait(5)
 					hum.Parent:Destroy()
+					end
 				end
 			end)
 		elseif v.Name == "Beam2" then
@@ -107,7 +110,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 		elseif v.Name == "Beam5" then
 			v.Touched:Connect(function(hit)
 				local hum = hit.Parent:FindFirstChild("Humanoid")
-				if hum ~= nil and not hum.Parent:FindFirstChild("Caught") then
+				if hum ~= nil and not hum.Parent:FindFirstChild("Caught") and hum.Parent:FindFirstChild("HumanoidRootPart") then
 					local Caughter = Instance.new("BoolValue",hum.Parent)
 					Caughter.Name = "Caught"
 					hum.Parent.HumanoidRootPart.Anchored = false
