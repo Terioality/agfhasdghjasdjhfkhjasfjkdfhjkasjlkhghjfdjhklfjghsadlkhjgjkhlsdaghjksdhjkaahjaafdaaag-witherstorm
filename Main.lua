@@ -52,6 +52,9 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					hum.Health = 0
 					wait(5)
 					hum.Parent:Destroy()
+					else
+					wait(4)
+					hum.Parent.HumanoidRootPart.Anchored = false
 					end
 				elseif hum == nil then
 					local hum2 = hit
