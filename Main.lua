@@ -37,7 +37,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 	if v:IsA("BasePart") then
 		if v.Name == "Beam1" then
 			v.Touched:Connect(function(hit)
-				local hum = game.Players.LocalPlayer.Character.Humanoid
+				local hum = hit.Parent:FindFirstChild("Humanoid")
 				if hum ~= nil and not hum.Parent:FindFirstChild("Caught") then
 					local Caughter = Instance.new("BoolValue",hum.Parent)
 					Caughter.Name = "Caught"
@@ -55,7 +55,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 			end)
 		elseif v.Name == "Beam2" then
 			v.Touched:Connect(function(hit)
-				local hum = game.Players.LocalPlayer.Character.Humanoid
+				local hum = hit.Parent:FindFirstChild("Humanoid")
 				if hum ~= nil and not hum.Parent:FindFirstChild("Caught") then
 					local Caughter = Instance.new("BoolValue",hum.Parent)
 					Caughter.Name = "Caught"
@@ -72,7 +72,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 			end)
 		elseif v.Name == "Beam3" then
 			v.Touched:Connect(function(hit)
-				local hum = game.Players.LocalPlayer.Character.Humanoid
+				local hum = hit.Parent:FindFirstChild("Humanoid")
 				if hum ~= nil and not hum.Parent:FindFirstChild("Caught") then
 					local Caughter = Instance.new("BoolValue",hum.Parent)
 					Caughter.Name = "Caught"
@@ -89,7 +89,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 			end)
 		elseif v.Name == "Beam4" then
 			v.Touched:Connect(function(hit)
-				local hum = game.Players.LocalPlayer.Character.Humanoid
+				local hum = hit.Parent:FindFirstChild("Humanoid")
 				if hum ~= nil and not hum.Parent:FindFirstChild("Caught") then
 					local Caughter = Instance.new("BoolValue",hum.Parent)
 					Caughter.Name = "Caught"
@@ -106,7 +106,7 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 			end)
 		elseif v.Name == "Beam5" then
 			v.Touched:Connect(function(hit)
-				local hum = game.Players.LocalPlayer.Character.Humanoid
+				local hum = hit.Parent:FindFirstChild("Humanoid")
 				if hum ~= nil and not hum.Parent:FindFirstChild("Caught") then
 					local Caughter = Instance.new("BoolValue",hum.Parent)
 					Caughter.Name = "Caught"
