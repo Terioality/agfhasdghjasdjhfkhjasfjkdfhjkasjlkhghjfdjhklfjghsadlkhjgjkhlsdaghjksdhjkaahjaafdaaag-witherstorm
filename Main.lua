@@ -42,8 +42,8 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					local Caughter = Instance.new("BoolValue",hum.Parent)
 					Caughter.Name = "Caught"
 					hum.Parent.HumanoidRootPart.Anchored = false
-					local chanceagain = math.random(1,5)
-					if chanceagain == 1 then
+					local chanceagain = math.random(1,100)
+					if chanceagain ~= 1 then
 					wait(1.5)
 					hum.Parent.PrimaryPart.Anchored = true
 					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head1.HeadV2.HeadUnion.CFrame}):Play()
