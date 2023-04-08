@@ -5,6 +5,7 @@ game.Players.LocalPlayer.Character.Parent = playerfold
 spawn(function()
 while true do
 game.Players.LocalPlayer.Character.Humanoid.HipHeight = 350
+wait(0.3)
 end
 end)
 	workspace.CurrentCamera:remove()
