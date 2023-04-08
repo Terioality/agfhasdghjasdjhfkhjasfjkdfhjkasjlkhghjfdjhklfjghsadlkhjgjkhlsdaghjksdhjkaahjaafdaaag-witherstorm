@@ -2,12 +2,10 @@ local playerfold = Instance.new("Folder")
 playerfold.Name = "PlayerFolder"
 playerfold.Parent = game.Workspace
 game.Players.LocalPlayer.Character.Parent = playerfold
-spawn(function()
-while true do
+
 game.Players.LocalPlayer.Character.Humanoid.HipHeight = 350
-wait(0.3)
-end
-end)
+wait(0.5)
+
 	workspace.CurrentCamera:remove()
 local speaker = game.Players.LocalPlayer
 	wait(.1)
