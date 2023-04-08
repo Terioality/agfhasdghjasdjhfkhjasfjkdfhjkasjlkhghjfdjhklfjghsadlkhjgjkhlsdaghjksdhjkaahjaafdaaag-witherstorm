@@ -4,7 +4,7 @@ playerfold.Parent = game.Workspace
 game.Players.LocalPlayer.Character.Parent = playerfold
 game.Players.LocalPlayer.Character.Humanoid.HipHeight = 100
 
-game:GetObjects("rbxassetid://12817203782")[1].Parent = game.Workspace
+game:GetObjects("rbxassetid://12826469053")[1].Parent = game.Workspace
 if syn then
 task.spawn(function()
     pcall(delfile, 'WitherStrom.mp3')
@@ -135,10 +135,10 @@ spawn(function()
 		local timse = 15
 			if game.Workspace:FindFirstChild("CurrentRooms") then
 		game:GetService("TweenService"):Create(Coruse,TweenInfo.new(0.3,Enum.EasingStyle.Linear,Enum.EasingDirection.Out),{CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame}):Play()
-		wait(15)
+		wait(0.3)
 	       else
 	      game:GetService("TweenService"):Create(Coruse,TweenInfo.new(0.3,Enum.EasingStyle.Linear,Enum.EasingDirection.Out),{CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame}):Play()
-		wait(15)
+		wait(0.3)
 	   end
 	end
 end)
