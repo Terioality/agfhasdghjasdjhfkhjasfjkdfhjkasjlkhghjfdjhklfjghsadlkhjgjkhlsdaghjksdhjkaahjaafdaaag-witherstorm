@@ -127,17 +127,17 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 		end
 	end
 end
-local Coruse = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").PrimaryPart
+local Coruse = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").CommandBlock
 Coruse.Anchored = true
 spawn(function()
 
 	while true do
 		local timse = 15
 			if game.Workspace:FindFirstChild("CurrentRooms") then
-		game:GetService("TweenService"):Create(Coruse,TweenInfo.new(40,Enum.EasingStyle.Linear,Enum.EasingDirection.Out),{CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame}):Play()
+		game:GetService("TweenService"):Create(Coruse,TweenInfo.new(0.3,Enum.EasingStyle.Linear,Enum.EasingDirection.Out),{CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame}):Play()
 		wait(15)
 	       else
-	      game:GetService("TweenService"):Create(Coruse,TweenInfo.new(25,Enum.EasingStyle.Linear,Enum.EasingDirection.Out),{CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame}):Play()
+	      game:GetService("TweenService"):Create(Coruse,TweenInfo.new(0.3,Enum.EasingStyle.Linear,Enum.EasingDirection.Out),{CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame}):Play()
 		wait(15)
 	   end
 	end
