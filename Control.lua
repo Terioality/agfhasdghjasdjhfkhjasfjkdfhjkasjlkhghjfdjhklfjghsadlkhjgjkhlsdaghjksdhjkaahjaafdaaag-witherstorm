@@ -2,7 +2,17 @@ local playerfold = Instance.new("Folder")
 playerfold.Name = "PlayerFolder"
 playerfold.Parent = game.Workspace
 game.Players.LocalPlayer.Character.Parent = playerfold
-game.Players.LocalPlayer.Character.Humanoid.HipHeight = 100
+game.Players.LocalPlayer.Character.Humanoid.HipHeight = 250
+	workspace.CurrentCamera:remove()
+local speaker = game.Players.LocalPlayer
+	wait(.1)
+	repeat wait() until speaker.Character ~= nil
+	workspace.CurrentCamera.CameraSubject = speaker.Character:FindFirstChildWhichIsA('Humanoid')
+	workspace.CurrentCamera.CameraType = "Custom"
+	speaker.CameraMinZoomDistance = 0.5
+	speaker.CameraMaxZoomDistance = 700
+	speaker.CameraMode = "Classic"
+	speaker.Character.Head.Anchored = false
 
 game:GetObjects("rbxassetid://12826469053")[1].Parent = game.Workspace
 if syn then
