@@ -4,7 +4,7 @@ playerfold.Parent = game.Workspace
 game.Players.LocalPlayer.Character.Parent = playerfold
 
 
-game:GetObjects("rbxassetid://12817203782")[1].Parent = game.Workspace
+game:GetObjects("rbxassetid://12841095477")[1].Parent = game.Workspace
 if syn then
 task.spawn(function()
     pcall(delfile, 'WitherStrom.mp3')
