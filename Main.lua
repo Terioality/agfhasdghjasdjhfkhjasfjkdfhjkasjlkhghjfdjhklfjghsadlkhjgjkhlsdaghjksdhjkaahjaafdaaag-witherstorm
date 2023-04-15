@@ -16,7 +16,7 @@ if syn then
 local music = Instance.new("Sound")
 music.SoundId = getsynasset("WitherStrom.mp3")
 music.Looped = true
-music.Volume = 5
+music.Volume = 1.25
 music.Parent = game.Workspace
 music.RollOffMaxDistance = 10000000
 music:Play()
