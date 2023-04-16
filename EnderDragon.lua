@@ -4,7 +4,7 @@ playerfold.Parent = game.Workspace
 game.Players.LocalPlayer.Character.Parent = playerfold
 
 
-game:GetObjects("rbxassetid://12817203782")[1].Parent = game.Workspace
+game:GetObjects("rbxassetid://13158193382")[1].Parent = game.Workspace
 if syn then
 task.spawn(function()
     pcall(delfile, 'WitherStrom.mp3')
@@ -33,9 +33,9 @@ end
 
 
 
-for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):GetDescendants()) do
+for i,v in pairs(game.Workspace.EnderDragon_Main:FindFirstChild("EnderDragon"):GetDescendants()) do
 	if v:IsA("BasePart") then
-		if v.Name == "Beam1" then
+		if v.Name == "Hitbox" then
 			v.Touched:Connect(function(hit)
 				local hum = hit.Parent:FindFirstChild("Humanoid")
 				if hum ~= nil and not hum.Parent:FindFirstChild("Caught") then
@@ -46,82 +46,10 @@ for i,v in pairs(game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm"):G
 					if chanceagain ~= 1 then
 					wait(1.5)
 					hum.Parent.PrimaryPart.Anchored = true
-					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head1.HeadV2.HeadUnion.CFrame}):Play()
 
-					wait(1)
-					wait(14)
+					wait(0.5)
 					hum.Health = 0
-					wait(5)
-					hum.Parent:Destroy()
 					end
-				end
-			end)
-		elseif v.Name == "Beam2" then
-			v.Touched:Connect(function(hit)
-				local hum = hit.Parent:FindFirstChild("Humanoid")
-				if hum ~= nil and not hum.Parent:FindFirstChild("Caught") then
-					local Caughter = Instance.new("BoolValue",hum.Parent)
-					Caughter.Name = "Caught"
-					hum.Parent.HumanoidRootPart.Anchored = false
-					wait(1.5)
-					hum.Parent.PrimaryPart.Anchored = true
-					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head2.HeadV2.HeadUnion.CFrame}):Play()
-
-					wait(15)
-					hum.Health = 0
-											wait(5)
-					hum.Parent:Destroy()
-				end
-			end)
-		elseif v.Name == "Beam3" then
-			v.Touched:Connect(function(hit)
-				local hum = hit.Parent:FindFirstChild("Humanoid")
-				if hum ~= nil and not hum.Parent:FindFirstChild("Caught") then
-					local Caughter = Instance.new("BoolValue",hum.Parent)
-					Caughter.Name = "Caught"
-					hum.Parent.HumanoidRootPart.Anchored = false
-					wait(1.5)
-					hum.Parent.PrimaryPart.Anchored = true
-					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head3.HeadV2.HeadUnion.CFrame}):Play()
-
-					wait(15)
-					hum.Health = 0
-											wait(5)
-					hum.Parent:Destroy()
-				end
-			end)
-		elseif v.Name == "Beam4" then
-			v.Touched:Connect(function(hit)
-				local hum = hit.Parent:FindFirstChild("Humanoid")
-				if hum ~= nil and not hum.Parent:FindFirstChild("Caught") then
-					local Caughter = Instance.new("BoolValue",hum.Parent)
-					Caughter.Name = "Caught"
-					hum.Parent.HumanoidRootPart.Anchored = false
-					wait(1.5)
-					hum.Parent.PrimaryPart.Anchored = true
-					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head4.HeadV2.HeadUnion.CFrame}):Play()
-
-					wait(15)
-					hum.Health = 0
-											wait(5)
-					hum.Parent:Destroy()
-				end
-			end)
-		elseif v.Name == "Beam5" then
-			v.Touched:Connect(function(hit)
-				local hum = hit.Parent:FindFirstChild("Humanoid")
-				if hum ~= nil and not hum.Parent:FindFirstChild("Caught") and hum.Parent:FindFirstChild("HumanoidRootPart") then
-					local Caughter = Instance.new("BoolValue",hum.Parent)
-					Caughter.Name = "Caught"
-					hum.Parent.HumanoidRootPart.Anchored = false
-					wait(1.5)
-					hum.Parent.PrimaryPart.Anchored = true
-					game:GetService("TweenService"):Create(hum.Parent.PrimaryPart,TweenInfo.new(15),{CFrame = game.Workspace.WitherStorm_Main:FindFirstChild("WitherStorm").Head5.HeadV2.HeadUnion.CFrame}):Play()
-
-					wait(15)
-					hum.Health = 0
-											wait(5)
-					hum.Parent:Destroy()
 				end
 			end)
 		end
@@ -290,5 +218,7 @@ while true do
 	end
 end
 end
+
+
 
 
